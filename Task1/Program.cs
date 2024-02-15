@@ -11,8 +11,8 @@ void recursia(int m, int n)
         recursia(m: m + 1, n);
     }
 }
-System.Console.WriteLine(value: $"Введите первое число:");
+System.Console.WriteLine(value: $"Введите первое число M:");
 int m = Convert.ToInt32(value: Console.ReadLine()!);
-System.Console.WriteLine(value: $"Введите второе число больше первого:");
+System.Console.WriteLine(value: $"Введите второе число N больше первого:");
 int n = Convert.ToInt32(value: Console.ReadLine()!);
 recursia(m, n);
