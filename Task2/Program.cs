@@ -11,9 +11,9 @@ int akkerman(int m, int n)
     }
     else return akkerman(m: m - 1, n: akkerman(m, n: n - 1));
 }
-Console.Write($"Функция Аккермана равно {akkerman(m, n)}");
 
 Console.Write("Введите значение M: ");
 int m = Convert.ToInt32(Console.ReadLine()!);
 Console.Write("Введите значение N: ");
 int n = Convert.ToInt32(Console.ReadLine()!);
+Console.Write($"Функция Аккермана равно {akkerman(m, n)}");
