@@ -6,7 +6,7 @@ void printBackArray(int[] array, int i = 0)
 {
     if (i < array.Length)
     {
-        Print(array, i: i + 1);
+        printBackArray(array, i: i + 1);
         Console.Write(" " + array[i]);
     }
 }
