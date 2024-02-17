@@ -4,12 +4,16 @@
 */
 void printBackArray(int[] array, int i = 0)
 {
+    if (i==array.Length)
+    System.Console.WriteLine("\nПеревернутый массив:");
     if (i < array.Length)
     {
+        Console.Write(" " + array[i]);
         printBackArray(array, i: i + 1);
         Console.Write(" " + array[i]);
     }
 }
 
-int[] array = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+int[] array = { 23, 22, 33, 45, 57, 68, 74, 8, 9 };
+System.Console.WriteLine("Заданный массив:");
 printBackArray(array);
